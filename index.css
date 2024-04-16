@@ -1,0 +1,25 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bg-gradient {
+  background: linear-gradient(90.95deg, #dee5ff 0.79%, #809aff 99.18%);
+}
+
+.bg-gradient-2 {
+  background: linear-gradient(270deg, #7b91ff 0%, #95beff 100%);
+}
+
+.bg-gradient-3 {
+  background: linear-gradient(
+    90.07deg,
+    rgba(129, 157, 255, 0.28) 5.94%,
+    rgba(16, 16, 16, 0) 76.45%
+  );
+}
+
+.mobile-screen {
+  background-color: #fcfcfc;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      .workout-card {
+        box-shadow: -4px 8px 25px -8px #00000026;
+      }
+
+      .workout-card img {
+        background: #819aff26;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-200">
+    <div class="py-6 px-12">
+      <h1 class="text-2xl">Dacoid Assignment</h1>
+      <h2>Made by Divyansh Gupta</h2>
+    </div>
+    <main class="flex justify-center items-center px-12 py-12">
+      <div
+        class="rounded-xl relative shadow-xl bg-white w-[375px] h-[800px] py-[24px] px-[16px] mobile-screen"
+      >
+        <div class="flex flex-col items-center justify-between">
+          <div class="flex flex-row items-center justify-between">
+            <div></div>
+            <div>
+              <h2 class="text-[20px] font-semibold montserrat">
+                Workout Tracker
+              </h2>
+            </div>
+          </div>
+          <div class="mt-[80px]">
+            <img src="./assets/chart.png" class="w-[343px] h-[90px]" alt="" />
+          </div>
+          <div
+            class="bg-gradient-3 mb-[54px] border border-[#4545450A] mt-[24px] h-[50px] rounded-2xl px-3 py-3 flex flex-row items-center"
+          >
+            <p class="text-[12px] font-semibold">
+              You've burned fewer calories than yesterday. Time to get moving!
+            </p>
+          </div>
+          <div class="w-full flex flex-col space-y-4">
+            <div class="flex flex-row items-center justify-between mb-[2px]">
+              <h4 class="montserrat font-semibold text-[16px]">
+                Upcoming workouts
+              </h4>
+              <span class="text-[#7F7F7F] montserrat text-[12px]"
+                >See More</span
+              >
+            </div>
+            <div
+              class="workout-card rounded-[12px] bg-white h-[75px] w-full p-4 flex flex-row items-center justify-between"
+            >
+              <div class="flex flex-row items-center space-x-2">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/4aee/a404/269733701b8604f00f8ab3dbc8874dc4?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Jn2957WOw3Q5OiVh0DNJ1fAGmxdBtGK5~4unUQlH6qrq90aLJPW1DCrE~ZmCOcAWds8SXIu7Fp~adlv9sa-WryKmHNw0X8jdrOQVN3-6covoBJkx34L3plirDGT820l2EYKkWOpqEc30JkU3KV~dHP3-4OYr~AEcPrYRza4iG78N5vMKdDnA1rGL0sZxV5~3V5RVGd9mvzV7zBJCbUINhlTYMhCHTtqWUSisdT910dafzal~Me56wI7kKnJK2gMFoQIRT1a1fjreu0SkwZhrMGgBtXqGGe~B18WfM3WC-BJUwXv1yOjwKuR5S1aaDo2z9HtVvVQuglEDHfkMOeHfBA__"
+                  alt=""
+                  class="rounded-full w-[50px] h-[50px]"
+                />
+                <div>
+                  <h2 class="montserrat text-[16px] font-semibold">
+                    Full body workout
+                  </h2>
+                  <span class="montserrat text-[#7F7F7F] text-[12px]"
+                    >Today 3pm</span
+                  >
+                </div>
+              </div>
+              <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" />
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </label>
+            </div>
+            <div
+              class="workout-card rounded-[12px] bg-white h-[75px] w-full p-4 flex flex-row items-center justify-between"
+            >
+              <div class="flex flex-row items-center space-x-2">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/5688/dda6/63ce83a9876ee1cadf652148a636fe39?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nhn46Ue9HmubMYQN5iRC31dIo6RKGgsT6N9rxn6TDDY27qtHTRapVwthAt9qtCWzpfLK0WDnd-JPAVgBB24APu96mJO6-UcDPfxyL7yxaFXQJwQCWwry9Pw4lfgXyxKYwOb4cKC6GdgHe-7eisAlqN2xCB~Il4wP96ypAn87~KpmWJTyFcndSwsQSr1bHawBzf9u-0jHyYrsa9MadbmUv3fUQmyV7iqgXQF5KqBz43HovfqNVTipfAuuHwKpWwo-Vc-AGDqjX7GBAjzyH92qsN-HWdy47IPeVn8S2tBKRIoBXYT7DXVQYT68MHRCW83Ow9gQl9lIhW8SuS3dpd0XeA__"
+                  alt=""
+                  class="rounded-full w-[50px] h-[50px]"
+                />
+                <div>
+                  <h2 class="montserrat text-[16px] font-semibold">
+                    Upper body workout
+                  </h2>
+                  <span class="montserrat text-[#7F7F7F] text-[12px]"
+                    >4 Feb, 3:30 pm</span
+                  >
+                </div>
+              </div>
+              <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" />
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </label>
+            </div>
+          </div>
+          <div class="w-full flex flex-col space-y-4 mt-[24px]">
+            <div class="flex flex-row items-center justify-between mb-[4px]">
+              <h4 class="montserrat font-semibold text-[16px]">
+                What do you want to train
+              </h4>
+            </div>
+            <div
+              class="rounded-[12px] px-[12px] h-[124px] w-full bg-[#8CB1FF] bg-opacity-60 flex flex-row items-center justify-between"
+            >
+              <div class="flex flex-col space-y-1">
+                <h1 class="montserrat text-[18px]">Full body workout</h1>
+                <span>Arms</span>
+                <span>Chest</span>
+              </div>
+              <div>
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/23ae/977c/32610d884493905711642300c8cc67c0?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DUnfWDBxBCh7EVxPNbDubqeRWNZ8WdDo8WW-dQlcer3wqvJ2dewWt5m2pvdrgLloWQxv8Ekm6PirETG-2KQs-Zxikr7OPSuy2w1TVU79mOWjRt2OQgnrvftYrDhTSb1-Z2XPufgpvvIjrsKv17pmeo3kb0q1-OVWJP3cwF27K9I0g5w6XwAz2olHowedMI3DJhX9oQyYs5wHzlvZypYgIOwFC0EGdRuDgcUSVFheupFT6vEK4KayiGgCN2TDfH0ZuoDBdCidY9fJuJSAcdoTPhFsMeBSseUsrtgk15HSXnWrS~pwhe6LmxHnkgcK-uAp8f~rYiowr23l24yn-lynHA__"
+                  class="rounded-full w-[100px] h-[100px] bg-white bg-opacity-50"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full h-[76px] p-4 bg-white -mt-[28px] flex flex-row items-center justify-between space-x-4"
+          >
+            <div>
+              <img src="./assets/home.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/tasks.png" alt="" />
+            </div>
+            <div
+              class="rounded-full h-[64px] shadow-xl w-[64px] bg-gradient -mt-12 flex items-center justify-center"
+            >
+              <img src="./assets/search.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/camera.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/profile.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
